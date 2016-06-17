@@ -39,3 +39,30 @@ git clone git@github.com:coloseo/H2G2.git
 ```
 4. 这时候产品经理二胡君，分配了一个任务给素还真:贤者，麻烦写一个Github规范文档.  
 素还真首先要做的第一件事就是在本地先创建一个分支，分支名叫`github-doc`.创建分支代码如下:
+```shell
+git checkout -b github-doc
+```
+上面的命令相当于执行以下两条指令  
+```shell
+git branch github-doc
+git checkout github-doc
+```
+先创建`github-doc`分支，再检出`github-doc`分支  
+5.  素还真同学开始在该分支下开工了.  
+> 2016-6-15日, 10点到14点，啪啦啪啦啪啦完成了文档的三分之一,可以提交一把了.
+> ```shell
+> git add . && git commit -m "素还真#2016-6-15 完成github command命令模块" && git push
+> ```
+> 2016-6-16日，10点到16点，啪啦啪啦完成了文档的三分之二, 又可以提交一把了.
+> ```shell
+> git add . && git commit -m "素还真#2016-6-16 完成github flow介绍部分" && git push
+>```
+> 2016-6-17日，10点到15点，啪啦啪啦终于把文档写完了.
+> ```shell
+> git add . && git commit -m "素还真#2016-6-17完成github-doc 功能" && git push
+> ```
+6. 素还真终于把文档写完了,下一步就是需要提交一个pull request到github.  
+pull request 提交到github有两种方式:  
+* low方式  打开github网站，访问相关项目并切换到pull request页面new一个新的pull request.
+* big方式  使用之前的git命令行工具提交一个pull request.
+
