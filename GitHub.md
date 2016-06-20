@@ -66,7 +66,7 @@ pull request 提交到github有两种方式:
 * low方式  打开github网站，访问相关项目并切换到pull request页面new一个新的pull request.
 * big方式  使用之前的git命令行工具提交一个pull request.
 ```shell
-git pull-request -m "素还真#2016-6-17完成Github文档编写"
+git pull-request -m "素还真:完成Github文档编写"
 ```
 7. 老司机一页书收到了素还真的pull reuquest请求,马上登录github去review代码.  
 老司机不愧是老司机，马上发现了文档里面的一个错别字,`登录`写成了`登陆`,这还了得？ 一页书马上发起了一个issues.
@@ -79,9 +79,8 @@ git issue create -m "登录写成登陆了,差评！"
 ```
 git add . && git commit -m "closed#5 修复issue5,登陆已改成登录" && git push
 ```
-9. 老司机一页书收到了素还真的提交，又仔细把代码review了一遍，嗯不错，通过！通过github把pull request merge进master.  
+9. 老司机一页书收到了素还真的提交，又仔细把代码review了一遍，嗯不错，通过！
 
-10. 打完收工.喝茶等下一个需求!!
+10. 一页书把github-doc 分支代码部署到dev环境教给测试人员测试.
 
-
-
+11. 测试通过后，合并分支到master并部署.
