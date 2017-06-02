@@ -6,7 +6,7 @@
      
      console.log(s);
 
-     val l = new String('abc');
+     var l = new String('abc');
      l[1] = 'B';
      console.log(l);
      #+END_SRC
